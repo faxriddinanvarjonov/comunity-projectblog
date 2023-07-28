@@ -1,0 +1,110 @@
+/* bebas-neue-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bebas-neue-v10-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* GLOBAL CSS START */
+
+::after,
+::before,
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+}
+main {
+  flex-grow: 1;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* GLOBAL CSS END */
+.content {
+  display: flex;
+  width: 1200px;
+  height: 782px;
+}
+.content__left-side {
+  background-image: url("../imgs/left-bg.png");
+  width: 600px;
+  height: 782px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content__left-side__p {
+  width: 28.5rem;
+  height: 5.8rem;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Bebas Neue;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.125rem;
+}
+.content__right-side {
+  width: 600px;
+  height: 782px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin: 54px ;
+}
+.content__right-side__p {
+  color: #222;
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+}
